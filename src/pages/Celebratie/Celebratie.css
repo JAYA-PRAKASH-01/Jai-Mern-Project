@@ -1,0 +1,52 @@
+.cele {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.cele-container {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(58, 58, 58, 0.625);
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cele-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px grey;
+}
+
+.cele-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  color: #333;
+}
+
+.title {
+  color: gray;
+  font-size: 0.9em;
+}
+.partner {
+  text-align: center;
+}
+.partner .pa {
+  font-size: 30px;
+  font-weight: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: #333;
+}

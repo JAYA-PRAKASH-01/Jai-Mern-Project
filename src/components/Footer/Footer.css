@@ -1,0 +1,110 @@
+.footer {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: white;
+  padding: 15px 5px;
+  text-align: center;
+  margin-top: 10px;
+  height: auto;
+  border-top: 3px solid #fbb034;
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo */
+.image img {
+  width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Links */
+.footer-left {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 10px;
+}
+
+/* List Styling */
+.footer-left ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-left ul li:hover,
+.footer-right ul li:hover {
+  color: #fbb034;
+  transform: scale(1.05);
+}
+
+/* Business Partner Link */
+.bus p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  transition: 0.3s;
+  color: #fbb034;
+  cursor: pointer;
+}
+
+.bus p:hover {
+  transform: scale(1.05);
+  text-shadow: 2px 2px 10px rgba(255, 200, 0, 0.6);
+}
+
+/* Social Media Icons */
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media img {
+  width: 25px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media img:hover {
+  transform: scale(1.3);
+}
+
+/* Contact Info */
+p {
+  margin: 5px auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Copyright */
+.copy-right {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.copy-right .brand {
+  font-weight: bold;
+  color: #fbb034;
+  font-size: 14px;
+}

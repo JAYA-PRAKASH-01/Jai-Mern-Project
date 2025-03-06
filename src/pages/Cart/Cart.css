@@ -1,0 +1,106 @@
+.cart {
+  margin-top: 100px;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-size: max(1vw, 12px);
+  color: grey;
+}
+.cart-items-list {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-size: max(1vw, 12px);
+  color: black;
+}
+
+.cart-items-list img {
+  width: 150px;
+
+  padding: 15px;
+  border-radius: 30px;
+}
+.item hr {
+  height: 1px;
+  border: none;
+  background-color: #e2e2e2;
+}
+.cart-items-list .cross {
+  cursor: pointer;
+  width: 33px;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  border-radius: 100px;
+}
+.cross {
+  background-color: rgba(219, 83, 83, 0.942);
+}
+
+.cart-bottom {
+  margin-top: 80px;
+  display: flex;
+  width: max(12vw, 20px);
+  margin-left: 500px;
+}
+.cart-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(65, 60, 60, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+}
+.cart-total {
+  box-shadow: 10px 10px 10px rgba(8, 2, 2, 0.219);
+}
+.cart-total h2
+{
+    text-align: center;
+}
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.cart-total-details hr {
+  border: 1px solid;
+}
+.cart-total-details .p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.cart-total hr {
+  height: 1px;
+  border: none;
+  background-color: #e2e2e2;
+}
+.cart-total button {
+  border: none;
+  color: white;
+  background-color: rgba(206, 31, 0, 0.89);
+  width: max(15vw, 200px);
+  padding: 12px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.empty-cart{
+    font-size: 30px ;
+    text-align: center;
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px ;
+    border: 1px solid grey;
+    width: 270px ;
+    padding: 3px;
+    border-radius: 40px ;
+    background-color: #555555e6;
+    box-shadow: 5px 5px 5px black;
+
+}

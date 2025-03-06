@@ -1,0 +1,144 @@
+.food-display {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+.food-item {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.food-item p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.food-item p :hover {
+  background-color: #115822;
+}
+.food-item img:hover {
+  box-shadow: 10px 10px 15px rgba(8, 2, 2, 0.4);
+}
+
+.food-item-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -24px;
+  right: -14px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000000;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  color: #ff0008;
+}
+
+.popup-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+.quantity-control button {
+  background: #000000e3;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: background 0.2s ease-in-out;
+}
+
+.quantity-control button:hover {
+  background-color: rgba(147, 4, 4, 0.968);
+}
+
+.quantity-control span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background: #115822;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+  background: #092b65;
+}
